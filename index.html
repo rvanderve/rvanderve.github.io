@@ -26,7 +26,7 @@
       	
       	<!-- Basic box. -->
 	<a-box ID="BOXX" color="tomato" depth="2" height="4" width="0.5">
-	<a-entity obj-model="obj: #tree-obj; mtl: #tree-mtl" scale="0.1 0.1 0.1"></a-entity>
+
 	<a-image src="#portland" width="1" height="0.35" position="-2 1.2 1">    </a-image>
     	<a-event name="cursor-mouseenter" scale="3 1 1" color="#FFC65D"></a-event>
         <a-event name="cursor-mouseenter" target="#BOXX" scale="3 2 2"></a-event>
@@ -36,6 +36,9 @@
     	</a-box>
 
 	  <a-sky color="#ECECEC"></a-sky>
+	  
+	  <a-entity obj-model="obj: #tree-obj; mtl: #tree-mtl" scale="0.01 0.01 0.01"></a-entity>
+	
 	</a-scene>
   </body>
 </html>

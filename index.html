@@ -17,8 +17,21 @@
 	<a-collada-model src="#man"></a-collada-model>
 	</a-entity>
 
+      <a-entity position="0 1.8 4">
+        <a-camera id="camera">
+          <a-cursor color="#4CC3D9"></a-cursor>
+        </a-camera>
+      </a-entity>
+      
 	<a-entity obj-model="obj: #tree-obj; mtl: #tree-mtl" scale="0.1 0.1 0.1"></a-entity>
-    <a-image src="https://aframe.io/aframe/examples/showcase-composite/portland.png" width="1" height="0.35" position="-2 1.2 1"></a-image>
+    <a-image src="https://aframe.io/aframe/examples/showcase-composite/portland.png" width="1" height="0.35" position="-2 1.2 1">
+    	        <a-event name="cursor-mouseenter" scale="3 1 1" color="#FFC65D"></a-event>
+        <a-event name="cursor-mouseenter" target="#shadow" scale="3 2 2"></a-event>
+        <a-event name="cursor-mouseleave" scale="1 1 1" color="#F16745"></a-event>
+        <a-event name="cursor-mouseleave" target="#shadow" scale="2 2 2"></a-event>
+    	
+    	
+    </a-image>
 	  <a-sky color="#ECECEC"></a-sky>
 	</a-scene>
   </body>

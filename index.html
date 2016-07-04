@@ -12,6 +12,7 @@
 		<a-asset-item id="man" src="../assets/man.dae"></a-asset-item>
 		<a-asset-item id="tree-obj" src="../assets/object.obj"></a-asset-item>
 		<a-asset-item id="tree-mtl" src="../assets/object.mtl"></a-asset-item>
+		<img id="portland" src="https://aframe.io/aframe/examples/showcase-composite/portland.png">
 	</a-assets>
 	 <a-entity id="model" position="0 0 -2">
 	<a-collada-model src="#man"></a-collada-model>
@@ -24,11 +25,11 @@
       </a-entity>
       
 	<a-entity obj-model="obj: #tree-obj; mtl: #tree-mtl" scale="0.1 0.1 0.1"></a-entity>
-    <a-image src="https://aframe.io/aframe/examples/showcase-composite/portland.png" width="1" height="0.35" position="-2 1.2 1">
-    	        <a-event name="cursor-mouseenter" scale="3 1 1" color="#FFC65D"></a-event>
-        <a-event name="cursor-mouseenter" target="#shadow" scale="3 2 2"></a-event>
+    <a-image src="#portland" width="1" height="0.35" position="-2 1.2 1">
+    	<a-event name="cursor-mouseenter" scale="3 1 1" color="#FFC65D"></a-event>
+        <a-event name="cursor-mouseenter" target="#portland" scale="3 2 2"></a-event>
         <a-event name="cursor-mouseleave" scale="1 1 1" color="#F16745"></a-event>
-        <a-event name="cursor-mouseleave" target="#shadow" scale="2 2 2"></a-event>
+        <a-event name="cursor-mouseleave" target="#portland" scale="2 2 2"></a-event>
     	
     	
     </a-image>

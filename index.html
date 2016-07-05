@@ -14,10 +14,10 @@
 		<a-asset-item id="tree-mtl" src="assets/object.mtl"></a-asset-item>
 		<img id="portland" src="../assets/BASIC BOLORS.PNG">
 	</a-assets>
-	 <a-entity id="model" position="0 0 -2">
-	<a-collada-model src="#man"></a-collada-model>
-	</a-entity>
-  <a-collada-model id="man" src="assets/sculpture.dae" position="-2 1 -4" scale="0.5 0.50.51"></a-collada-model>
+	
+  <a-collada-model id="second" src="assets/man.dae" position="3 1 -4" scale "1.5 1.5 1.5"></a-collada-model>
+
+  <a-collada-model id="sculptue" src="assets/sculpture.dae" position="-2 1 -4" scale="0.5 0.50.51"></a-collada-model>
       <a-entity position="0 1.8 4">
         <a-camera id="camera">
           <a-cursor color="#4CC3D9"></a-cursor>
@@ -25,13 +25,13 @@
       </a-entity>
       	
       	<!-- Basic box. -->
-	<a-box ID="BOXX" color="tomato" depth="2" height="4" position="0 0 0">
+	<a-box ID="BOXX" color="tomato" depth="1" height=1" position="0 0 0">
 	   	</a-box>
 	<a-image src="#portland" width="1" height="1" position="-2 1.2 1"> </a-image>
     
 	  <a-sky color="#ECECEC"></a-sky>
 	  
-	  //<a-entity obj-model="obj: #tree-obj; mtl: #tree-mtl" scale="1 1 1"></a-entity>
+	  <a-entity obj-model="obj: #tree-obj; mtl: #tree-mtl" scale="1 1 1"></a-entity>
 
 	</a-scene>
   </body>

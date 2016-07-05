@@ -34,10 +34,16 @@
 	  
 	  <a-entity obj-model="obj: #tree-obj; mtl: #tree-mtl" scale="0.01 0.01 0.01"></a-entity>
 
-	document.querySelector('#BOXX').addEventListener('click', function () {
-  this.setAttribute('material', 'color', 'red');
-  console.log('I was clicked!');
+// CLICK-LISTENER COMPONENT to pass window clicks to an entity.
+AFRAME.registerComponent('clic-listener', {
+  init: function () {
+    var el = this.el;
+    window.addEventListener('click', function () {
+      el.emit('click', null, false);
+    });
+  }
 });
+
 	</a-scene>
   </body>
 </html>

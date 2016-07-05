@@ -26,19 +26,12 @@
       	
       	<!-- Basic box. -->
 	<a-box ID="BOXX" color="tomato" depth="2" height="4" width="1" position="3 0 0">
-	      <a-animation attribute="SCALE" to="0.01 0.01 0.01" duration="4000"></a-animation>
-   	</a-box>
+	   	</a-box>
 	<a-image src="#portland" width="1" height="1" position="-2 1.2 1"> </a-image>
     
 	  <a-sky color="#ECECEC"></a-sky>
 	  
 	  <a-entity obj-model="obj: #tree-obj; mtl: #tree-mtl" scale="0.01 0.01 0.01"></a-entity>
-
-// CLICK-LISTENER COMPONENT to pass window clicks to an entity.
-AFRAME.registerComponent('clic-listener', {init: function () {var el = this.el; window.addEventListener('click', function () {el.emit('click', null, false);
-    });
-  }
-})
 
 	</a-scene>
   </body>
